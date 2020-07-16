@@ -2,7 +2,7 @@
 Super-simple performance timers
 
 
-## Example Usage
+## Ruby: Example Usage
 
 ```ruby
 
@@ -10,7 +10,7 @@ require 'perf_stats.rb'
 
 perf = PerfStats.new
 
-[1..10].each do |i|
+(1..10).each do |i|
   perf.start "print things"
   puts "things"
   perf.end "print things"
@@ -19,7 +19,7 @@ perf = PerfStats.new
  
 stuff_count = 0
 perf.start "print stuff"
-[1..10].each do |i|
+(1..10).each do |i|
   puts "stuff"
   stuff_count += 1
  end
