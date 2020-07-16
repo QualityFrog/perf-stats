@@ -10,7 +10,7 @@ require 'perf_stats.rb'
 
 perf = PerfStats.new
 
-(1..10).each do |i|
+(1..10).each do 
   perf.start "print things"
   puts "things"
   perf.end "print things"
@@ -19,7 +19,7 @@ perf = PerfStats.new
  
 stuff_count = 0
 perf.start "print stuff"
-(1..10).each do |i|
+(1..10).each do 
   puts "stuff"
   stuff_count += 1
  end
